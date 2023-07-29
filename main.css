@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+section {
+  height: 100vh;
+  color: #fff;
+  scroll-snap-align: start;
+}
+
+.cnota {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one .linear-text {
+  background-image: linear-gradient(211deg, #9130F4 0%, #4646F9 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.one .linear-text span {
+  color: #fff;
+}
+.one .bordered-a {
+  border: 4px solid transparent;
+  -o-border-image: linear-gradient(90deg, rgb(129, 45, 226) 0%, rgb(58, 73, 249) 100%);
+     border-image: linear-gradient(90deg, rgb(129, 45, 226) 0%, rgb(58, 73, 249) 100%);
+  border-image-slice: 1;
+}
+.one .bordered-a:hover {
+  box-shadow: 0 0 5px rgb(129, 45, 226), 0 0 25px rgb(129, 45, 226), 0 0 50px rgb(129, 45, 226), 0 0 100px rgb(129, 45, 226), 0 0 100px rgb(129, 45, 226);
+}/*# sourceMappingURL=main.css.map */
