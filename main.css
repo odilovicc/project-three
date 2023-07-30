@@ -10,7 +10,6 @@
 
 section {
   height: 100vh;
-  color: #fff;
   scroll-snap-align: start;
 }
 
@@ -20,21 +19,63 @@ section {
   height: 100vh;
 }
 
-.one .linear-text {
-  background-image: linear-gradient(211deg, #9130F4 0%, #4646F9 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+.linear-text {
+  background-image: linear-gradient(211deg, #9130F4 0%, #4646F9 100%) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
-.one .linear-text span {
+.linear-text span {
   color: #fff;
 }
-.one .bordered-a {
-  border: 4px solid transparent;
+
+.bordered-a {
+  border: 2px solid transparent;
   -o-border-image: linear-gradient(90deg, rgb(129, 45, 226) 0%, rgb(58, 73, 249) 100%);
      border-image: linear-gradient(90deg, rgb(129, 45, 226) 0%, rgb(58, 73, 249) 100%);
   border-image-slice: 1;
+  box-shadow: 0 0 25px rgb(129, 45, 226), 0 0 50px rgb(129, 45, 226);
 }
-.one .bordered-a:hover {
+.bordered-a:hover {
+  -o-border-image: none;
+     border-image: none;
   box-shadow: 0 0 5px rgb(129, 45, 226), 0 0 25px rgb(129, 45, 226), 0 0 50px rgb(129, 45, 226), 0 0 100px rgb(129, 45, 226), 0 0 100px rgb(129, 45, 226);
+}
+
+.bordered-cards {
+  border: 2px solid rgb(129, 45, 226);
+  border-radius: 2rem;
+}
+.bordered-cards:nth-child(1) {
+  position: relative;
+}
+.bordered-cards:nth-child(1) ::after {
+  content: "1";
+  position: absolute;
+  font-size: 4rem;
+  bottom: -2rem;
+  right: 4.5rem;
+  color: #9130F4;
+}
+.bordered-cards:nth-child(3) {
+  position: relative;
+}
+.bordered-cards:nth-child(3) ::after {
+  content: "3";
+  position: absolute;
+  font-size: 4rem;
+  bottom: -2rem;
+  right: 3.5rem;
+  color: #9130F4;
+}
+.bordered-cards:nth-child(2) {
+  position: relative;
+}
+.bordered-cards:nth-child(2) ::after {
+  content: "2";
+  position: absolute;
+  font-size: 4rem;
+  bottom: -2rem;
+  right: 6rem;
+  color: #9130F4;
 }/*# sourceMappingURL=main.css.map */
