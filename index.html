@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-[#121139]">
+<body class="bg-[#121139] relative">
+
 
     <div class="cnota p-0 m-0 w-screen">
         <section class="one text-white">
@@ -48,7 +49,6 @@
                 </div>
             </div> <!-- Sponsors -->
             </div>
-    </section>
         </section>
         <section class="two bg-white">
             <div class="text-center container mx-auto py-20">
@@ -62,10 +62,10 @@
             </div>
         </section>
         <section class="three text-white">
-            <div class="container w-full mx-auto py-28 px-16 h-screen">
+            <div class="container w-full mx-auto py-16 px-16 h-screen">
                 <h1 class="w-full md:w-2/3 mx-auto capitalize text-center linear-text text-3xl md:text-7xl font-bold mb-4">Delivering value in every step of production</h1>
-                <div class="md:flex block py-2 md:py-24">
-                    <div class="hidden md:w-1/2">
+                <div class="md:flex block items-center py-2 md:py-24">
+                    <div class="hidden md:block md:w-1/2">
                         <img src="/assets/Circle Chart.png" class="shadow-2xl shadow-[#812DE2]" alt="">
                     </div>
                     <div class="w-full text-center md:text-start md:w-1/2">
@@ -90,7 +90,33 @@
                 </div>
             </div>
         </section>
-    </div>
+        <section class="h-screen hidden md:block bg-white relative">
+            <img src="/assets/card1bg.png" class="absolute bottom-0 right-0" alt="">
+            <div class="container py-20 mx-auto ">
+                <h1 class="text-5xl font-semibold mb-4 linear-text capitalize text-center">case study</h1>
+                <p class="text-center">Some results from our clients</p>
+                <div class="flex px-12 mt-24 items-center mx-auto relative">
+                    <img src="/assets/iPhone 13 Max- Midnight -  Portrait.png" class="absolute left-1/2" alt="">
+                    <div class="flex w-2/3 text-white items-center bg-[#15123E] rounded-md px-20 py-24">
+                        <div class="w-2/3">
+                            <h1 class="text-3xl font-semibold mb-14">Coruma Finance</h1>
+                            <p class="font-medium mb-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            <a href="#" class="bordered-a transition duration-500 p-7 uppercase">read more about this client</a>
     
+                        </div>
+                        <div class="w-96 text-center rotate-90 items-center">
+                            <img src="/assets/1.svg" class="opacity-40 w-full h-full mx-auto" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="w-1/2 gap-12 mx-auto">
+                        <div class="p-12 my-5 bg-[#15123e] text-center pl-32 text-white"><h1>Accquired 8 long time customers</h1></div>
+                        <div class="p-12 my-5 bg-[#15123e] text-center pl-32 text-white"><h1>300% Growth in first year</h1></div>
+                        <div class="p-12 my-5 bg-[#15123e] text-center pl-32 text-white"><h1>hired 24 talented developers</h1></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
